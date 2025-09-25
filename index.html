@@ -12,7 +12,7 @@
   <meta property="og:description" content="Expert private tutoring, homeschooling, and after-school support in Nairobi. Tailored to IGCSE, IB, American K–12, British, CBC & KCSE." />
   <meta property="og:image" content="assets/Elimuhub-newlogo.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourusername.github.io/yourrepo/" />
+  <meta property="og:url" content="https://elimuhub-website.github.io/" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -22,6 +22,192 @@
 
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="assets/Elimuhub-newlogo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f7fafc;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: #fff;
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+    .site-logo {
+      width: 110px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    nav {
+      margin: 1.3rem 0 0 0;
+    }
+    nav a {
+      color: #189ab4;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      font-size: 1.05rem;
+      transition: color .2s;
+    }
+    nav a:hover {
+      color: #05445e;
+    }
+    .hero {
+      background: linear-gradient(120deg, #189ab4 0%, #05445e 100%);
+      color: #fff;
+      padding: 3rem 1rem 3rem 1rem;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero .hero-text h2 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .hero .hero-text p {
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn, .btn-outline {
+      display: inline-block;
+      padding: .65rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1.08rem;
+      font-weight: 600;
+      margin: .3rem .4rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background .2s, color .2s, border .2s;
+    }
+    .btn {
+      background: #fff;
+      color: #05445e;
+      border: 2px solid #189ab4;
+    }
+    .btn:hover {
+      background: #189ab4;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    .btn-outline:hover {
+      background: #fff;
+      color: #189ab4;
+      border: 2px solid #189ab4;
+    }
+    main {
+      max-width: 1200px;
+      margin: -2rem auto 0 auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px rgba(24, 154, 180, 0.06);
+      padding: 2.5rem 1.3rem 2rem 1.3rem;
+      position: relative;
+      z-index: 3;
+    }
+    section {
+      margin-bottom: 2.8rem;
+    }
+    h2 {
+      color: #05445e;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+    }
+    .grid-2 div {
+      background: #f1f1f1;
+      border-radius: 12px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 8px rgba(24,154,180, .08);
+    }
+    .highlight {
+      background: #189ab4;
+      color: #fff;
+      padding: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(24,154,180, .15);
+      font-size: 1.15rem;
+      margin-bottom: 1.7rem;
+    }
+    .testimonials {
+      margin: 2rem 0 3rem 0;
+    }
+    .testimonial-card {
+      background: #e7f6f2;
+      border-left: 6px solid #189ab4;
+      box-shadow: 0 2px 8px rgba(24,154,180,.07);
+      padding: 1.2rem;
+      border-radius: 10px;
+      margin-bottom: 1.2rem;
+      font-style: italic;
+    }
+    .testimonial-author {
+      color: #05445e;
+      font-weight: bold;
+      font-size: 1.02rem;
+      margin-top: .7rem;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+    .cta h2 {
+      color: #189ab4;
+      margin-bottom: .7rem;
+      font-size: 1.5rem;
+    }
+    .cta .btn {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+    footer {
+      background: #05445e;
+      color: #fff;
+      padding: 2.2rem 1rem 1.2rem 1rem;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 1.06rem;
+      border-top-left-radius: 22px;
+      border-top-right-radius: 22px;
+    }
+    footer a {
+      color: #189ab4;
+      text-decoration: none;
+      margin: 0 .3rem;
+      font-weight: 500;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 1.2rem .5rem;
+      }
+      .hero .hero-text h2 {
+        font-size: 1.32rem;
+      }
+      h2 {
+        font-size: 1.19rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- ===== Header ===== -->
@@ -44,8 +230,8 @@
       <h2>Personalized Tutoring & Homeschooling in Nairobi</h2>
       <p>
         Unlock your child’s potential with expert tutors in IGCSE, IB, American K–12, 
-        British Curriculum, CBC, KCPE, KCSE, and adult education. Flexible, affordable, 
-        and tailored to your needs.
+        British Curriculum, CBC, KCPE, KCSE, and adult education.<br>
+        Flexible, affordable, and tailored to your needs.
       </p>
       <a href="services.html" class="btn">Explore Our Services</a>
       <a href="contact.html" class="btn btn-outline">Get Started Today</a>
@@ -55,12 +241,17 @@
   <!-- ===== Main Content ===== -->
   <main>
     <section>
+      <div class="highlight">
+        <strong>Now enrolling for the new term! Limited slots available for in-person and online tutoring.</strong>
+      </div>
       <h2>Why Choose Elimuhub?</h2>
       <ul>
         <li>🎯 One-on-one tutoring tailored to individual learning styles</li>
         <li>📚 Comprehensive support across multiple curricula</li>
         <li>👩‍🏫 Experienced, vetted, and passionate tutors</li>
         <li>🏠 Home tutoring, after-school programs, and homeschooling solutions</li>
+        <li>💻 Online lessons available for flexible learning</li>
+        <li>🏆 Proven track record of student success</li>
       </ul>
     </section>
 
@@ -69,22 +260,66 @@
       <div class="grid-2">
         <div>
           <h3>International Curriculums</h3>
-          <p>IGCSE, IB, and American K–12 tutoring for global-standard learning.</p>
+          <p>IGCSE, IB, and American K–12 tutoring for global-standard learning. Our tutors are well-versed in international syllabi and exam techniques.</p>
         </div>
         <div>
           <h3>Kenyan Curriculums</h3>
-          <p>Master 8-4-4, CBC, KCPE, and KCSE with proven support strategies.</p>
+          <p>Master 8-4-4, CBC, KCPE, and KCSE with proven support strategies. We help students excel in national exams and develop lifelong skills.</p>
         </div>
         <div>
           <h3>Adult Education</h3>
-          <p>Flexible learning paths for professionals, parents, and adult learners.</p>
+          <p>Flexible learning paths for professionals, parents, and adult learners. Whether it's language skills, computer literacy, or career advancement, we have you covered.</p>
         </div>
         <div>
           <h3>Exam Preparation</h3>
-          <p>Targeted coaching to boost confidence and achieve top results.</p>
+          <p>Targeted coaching to boost confidence and achieve top results. Personalized revision plans and mock exams available.</p>
         </div>
       </div>
     </section>
+
+    <section>
+      <h2>Meet Our Tutors</h2>
+      <div class="grid-2">
+        <div>
+          <h4>Jane W. – IGCSE & IB Math Specialist</h4>
+          <p>Certified teacher, 8+ years’ experience, patient and passionate about STEM.</p>
+        </div>
+        <div>
+          <h4>Samuel M. – Kenyan Curriculum Expert</h4>
+          <p>KCSE examiner, CBC educator, renowned for creative teaching methods.</p>
+        </div>
+        <div>
+          <h4>Fatma A. – English & Adult Education Coach</h4>
+          <p>Helps learners of all ages master language and communication skills.</p>
+        </div>
+        <div>
+          <h4>More tutors...</h4>
+          <p>Our team includes vetted professionals for every subject and level.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Parents & Students Say</h2>
+      <div class="testimonial-card">
+        “Elimuhub helped my son excel in IGCSE math. The tutor was patient and flexible, and the results speak for themselves.”
+        <div class="testimonial-author">– Mrs. Achieng, Nairobi</div>
+      </div>
+      <div class="testimonial-card">
+        “The homeschooling support was a lifesaver during school closures. I recommend Elimuhub to anyone seeking quality education.”
+        <div class="testimonial-author">– Peter, Parent</div>
+      </div>
+      <div class="testimonial-card">
+        “Great tutors for KCSE prep! My grades improved and I gained confidence for the exams.”
+        <div class="testimonial-author">– Mercy, Student</div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <h2>Ready to begin your learning journey?</h2>
+      <a href="contact.html" class="btn">Contact Us</a>
+      <p>Or call <a href="tel:+254731838387">+254 731 838 387</a> for a free academic consultation.</p>
+    </div>
   </main>
 
   <!-- ===== Footer ===== -->
