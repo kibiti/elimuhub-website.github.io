@@ -1,9 +1,8 @@
-
 # 📚 Elimuhub Education Consultants
 
 <p align="center">
   <a href="https://elimuhub-website.github.io/">
-    <img src="https://raw.githubusercontent.com/kibiti/elimuhub-website.github.io/a741b8f8c87e4b3c0447a75cd38ba18264d005d2/Assets/Elimuhub-newlogo.png"
+    <img src="Assets/logo/Elimuhub-newlogo.png"
          alt="Elimuhub Logo"
          width="200"
          title="Elimuhub Education Consultants Logo"/>
@@ -17,7 +16,6 @@
 Welcome to **Elimuhub Education Consultants** – your trusted partner in navigating academic journeys, unlocking opportunities, and achieving educational goals.  
 Whether you're a student, parent, or institution, Elimuhub provides expert guidance and resources for every step of the way.
 
-
 <div align="center">
 
 [![Live Site](https://img.shields.io/badge/🌐_Live_Site-Visit_Now-brightgreen)](https://kibiti.github.io/elimuhub-website.github.io/)
@@ -25,6 +23,8 @@ Whether you're a student, parent, or institution, Elimuhub provides expert guida
 [![License](https://img.shields.io/badge/©-2025_Elimuhub_Education_Consultants-orange)](LICENSE)
 
 </div>
+
+---
 
 ## 🌟 Welcome to Elimuhub
 
@@ -51,7 +51,7 @@ At Elimuhub, we believe every student deserves access to quality education that 
 | 📘 8-4-4 System | 🌎 IGCSE | 🎓 KCPE/KCSE |
 | 📗 CBC (Competency Based Curriculum) | 🏴 British National Curriculum | 📊 SAT/ACT |
 | 👨‍🎓 Adult Education | 🇺🇸 American K-12 | 🌐 IB Diploma |
-| | 🇫🇷 French Curriculum | 📝 University Entrance |
+|                | 🇫🇷 French Curriculum   | 📝 University Entrance |
 
 ---
 
@@ -75,25 +75,26 @@ At Elimuhub, we believe every student deserves access to quality education that 
 ## 🚀 Project Structure
 
 ```
-
 elimuhub-website.github.io/
 │
-├──📄 index.html          # Landing page with overview and featured services
-├──📄 about.html          # Company history, mission, and team information
-├──📄 services.html       # Detailed service descriptions and pricing
-├──📄 blog.html           # Educational articles and success stories
-├──📄 resources.html      # Study materials and learning resources
-├──📄 contact.html        # Contact form and location details
+├── index.html           # Landing page with overview and featured services
+├── about.html           # Company history, mission, and team information
+├── services.html        # Detailed service descriptions and pricing
+├── blog.html            # Educational articles and success stories
+├── resources.html       # Study materials and learning resources
+├── contact.html         # Contact form and location details
+├── thank-you.html       # Confirmation page for contact form
 │
-├──📁 assets/             # Static resources
-│├── 🎨 style.css       # Main stylesheet with responsive design
-│├── 🖼️ Elimuhub-newlogo.png
-│├── 📱 images/         # Gallery and promotional images
-│└── 📜 scripts/        # JavaScript functionality (future)
+├── Assets/
+│   ├── style.css                 # Main stylesheet with responsive design
+│   ├── Elimuhub-newlogo.png      # Main logo asset
+│   ├── logo/                     # (Recommended) subdirectory for branding/logo files
+│   ├── images/                   # Gallery and promotional images
+│   └── scripts/                  # JavaScript functionality (future)
 │
-├──📄 README.md           # Project documentation (this file)
-└──📄 LICENSE            # Usage rights and permissions
-
+├── .gitlab-ci.yml        # GitLab CI/CD for Pages deployment (if needed)
+├── README.md             # Project documentation (this file)
+└── LICENSE               # Usage rights and permissions
 ```
 
 ---
@@ -111,29 +112,32 @@ elimuhub-website.github.io/
    ```bash
    git clone https://github.com/kibiti/elimuhub-website.github.io.git
    cd elimuhub-website.github.io
-```
+   ```
 
-1. Local Development
-   · Open index.html in your preferred browser
-   · Use a local server for enhanced testing (optional):
+2. **Local Development**
+   - Open `index.html` in your preferred browser
+   - Use a local server for enhanced testing (optional):
    ```bash
    python -m http.server 8000
    # or
    php -S localhost:8000
    ```
-2. Customize Content
-   · Update HTML files with new content
-   · Modify styles in assets/style.css
-   · Add images to assets/images/ folder
-3. Add New Pages
+
+3. **Customize Content**
+   - Update HTML files with new content
+   - Modify styles in `Assets/style.css`
+   - Add images to `Assets/images/` folder
+
+4. **Add New Pages**
    ```html
    <!-- Reference new CSS -->
-   <link rel="stylesheet" href="assets/style.css">
-   
+   <link rel="stylesheet" href="Assets/style.css">
+
    <!-- Add images -->
-   <img src="assets/Elimuhub-newlogo.png" alt="Elimuhub Logo">
+   <img src="Assets/Elimuhub-newlogo.png" alt="Elimuhub Logo">
    ```
-4. Deploy Changes
+
+5. **Deploy Changes**
    ```bash
    git add .
    git commit -m "Add new feature or content"
@@ -142,124 +146,110 @@ elimuhub-website.github.io/
 
 ---
 
-📞 Contact Information
+## 📞 Contact Information
 
-🏢 Location
-
+**Location:**  
 Muhoho Avenue, Nairobi, Kenya
 
-📱 Direct Contacts
+**Direct Contacts:**  
+- Email: elimuhubconsultant@gmail.com  
+- Phone/WhatsApp: +254 731 838 387  
+- Office Hours: Monday - Saturday, 8:00 AM - 6:00 PM
 
-· Email: elimuhubconsultant@gmail.com
-· Phone/WhatsApp: +254 731 838 387
-· Office Hours: Monday - Saturday, 8:00 AM - 6:00 PM
+**Social Media:**  
+- [Facebook](https://facebook.com/elimuhub) - Latest updates and educational tips  
+- [Twitter](https://twitter.com/elimuhub) - Quick news and announcements  
+- [Instagram](https://instagram.com/elimuhub) - Student success stories and events  
+- [LinkedIn](https://linkedin.com/company/elimuhub) - Professional network and partnerships
 
-🌐 Social Media
-
-· Facebook - Latest updates and educational tips
-· Twitter - Quick news and announcements
-· Instagram - Student success stories and events
-· LinkedIn - Professional network and partnerships
-
-📧 Quick Contact Form
-
-Visit our contact page for immediate assistance with:
-
-· 📝 Free educational assessment booking
-· 💰 Fee structure and package inquiries
-· 👨‍🏫 Tutor matching requests
-· 🏠 Homeschooling program details
+**Quick Contact Form:**  
+Visit our [contact page](contact.html) for immediate assistance with:
+- 📝 Free educational assessment booking
+- 💰 Fee structure and package inquiries
+- 👨‍🏫 Tutor matching requests
+- 🏠 Homeschooling program details
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 
 We welcome contributions to improve our website! Here's how you can help:
 
-🐛 Reporting Issues
-
+**🐛 Reporting Issues**
 1. Check existing issues to avoid duplicates
 2. Provide detailed description and steps to reproduce
 3. Include browser and device information
 
-💡 Suggesting Enhancements
-
+**💡 Suggesting Enhancements**
 1. Describe the feature or improvement
 2. Explain the benefits for students/parents
 3. Provide examples or mockups if possible
 
-🔧 Development Workflow
-
+**🔧 Development Workflow**
 1. Fork the repository
-2. Create a feature branch (git checkout -b feature/amazing-feature)
-3. Commit changes (git commit -m 'Add amazing feature')
-4. Push to branch (git push origin feature/amazing-feature)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ---
 
-📊 Website Features
+## 📊 Website Features
 
-✅ Current Features
+**✅ Current Features**
+- Responsive design for all devices
+- Fast loading with optimized assets
+- Accessible color schemes and fonts
+- Easy navigation between pages
+- Contact form functionality
 
-· Responsive design for all devices
-· Fast loading with optimized assets
-· Accessible color schemes and fonts
-· Easy navigation between pages
-· Contact form functionality
-
-🔄 Planned Enhancements
-
-. Online booking system
-· Student portal for resources
-· Tutor profile pages
-· Multilingual support
-· Blog with CMS integration
-· Testimonials section
+**🔄 Planned Enhancements**
+- Online booking system
+- Student portal for resources
+- Tutor profile pages
+- Multilingual support
+- Blog with CMS integration
+- Testimonials section
 
 ---
 
-🚀 Deployment
+## 🚀 Deployment
 
 This website is automatically deployed via GitHub Pages:
 
-Deployment Process
-
+**Deployment Process**
 1. Push changes to the main branch
-2. GitHub Actions automatically builds and deploys
-3. Site available at: https://kibiti.github.io/elimuhub-website.github.io/
+2. GitHub Pages automatically builds and deploys
+3. Site available at: [https://kibiti.github.io/elimuhub-website.github.io/](https://kibiti.github.io/elimuhub-website.github.io/)
 
-Custom Domain (Optional)
-
-To use a custom domain like elimuhub.co.ke:
-
+**Custom Domain (Optional)**
+To use a custom domain like `elimuhub.co.ke`:
 1. Add CNAME file with domain name
 2. Configure DNS settings with your provider
 3. Update GitHub Pages settings in repository
 
 ---
 
-**📜 License**
+## 📜 License
 
-© 2025 Elimuhub Education Consultants – All Rights Reserved.
+© 2025 Elimuhub Education Consultants – All Rights Reserved.  
 This project is licensed for educational and organizational website purposes only. Unauthorized commercial use or distribution is prohibited.
 
-**Usage Rights** 
-
+**Usage Rights**
 - ✅ Free to use for educational purposes
-· ✅ Can be customized for Elimuhub operations
-· ✅ Allows modification and extension
-· ❌ Commercial redistribution prohibited
-· ❌ Claiming as original work prohibited
+- ✅ Can be customized for Elimuhub operations
+- ✅ Allows modification and extension
+- ❌ Commercial redistribution prohibited
+- ❌ Claiming as original work prohibited
 
 ---
 
-🙏 **Acknowledgments**
+## 🙏 Acknowledgments
 
-· Built with pure HTML/CSS for optimal performance
-· Hosted generously by GitHub Pages
-· Icons provided by Font Awesome
-· Badges by Shields.io
+- Built with pure HTML/CSS for optimal performance
+- Hosted generously by GitHub Pages
+- Icons provided by Font Awesome
+- Badges by Shields.io
 
 ---
 
@@ -270,4 +260,3 @@ This project is licensed for educational and organizational website purposes onl
 ⬆ Back to Top
 
 </div>
-```
