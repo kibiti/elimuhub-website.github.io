@@ -1,16 +1,23 @@
-# elimuhub-website.github.io
-## 📚 Elimuhub Education Consultants
+<p align="center">
+  <img src="assets/Elimuhub-newlogo.png" alt="Elimuhub Logo" width="200">
+</p>
 
-Welcome to **Elimuhub Education Consultants**, your trusted partner in personalized tutoring, homeschooling, and academic success in Nairobi, Kenya. We provide flexible, professional, and affordable education solutions for students across different curricula.
+# elimuhub-website.github.io  
+## 📚 Elimuhub Education Consultants  
+
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit%20Now-brightgreen)](https://kibiti.github.io/elimuhub-website.github.io/)  
+
+Welcome to **Elimuhub Education Consultants**, your trusted partner in personalized tutoring, homeschooling, and academic success in Nairobi, Kenya.  
+We provide flexible, professional, and affordable education solutions for students across different curricula.  
 
 ---
 
-## 🚀 About Elimuhub
+## 🚀 About Elimuhub  
 
 Elimuhub Education Consultants specializes in offering **one-on-one private tutoring, homeschooling support, and exam preparation** for learners of all ages.  
-We serve students across Nairobi and beyond, covering **IGCSE, IB, American K-12, British National Curriculum, 8-4-4, CBC, KCPE, KCSE**, and even **adult education**.
+We serve students across Nairobi and beyond, covering **IGCSE, IB, American K-12, British National Curriculum, 8-4-4, CBC, KCPE, KCSE**, and even **adult education**.  
 
-📌 **Key Highlights:**
+📌 **Key Highlights:**  
 - One-on-one private tutoring at home or online  
 - Flexible hourly, weekly, or monthly packages  
 - Free educational assessment for all students  
@@ -19,7 +26,7 @@ We serve students across Nairobi and beyond, covering **IGCSE, IB, American K-12
 
 ---
 
-## 🎯 Services Offered
+## 🎯 Services Offered  
 
 - 📖 **Private Tutoring:** All subjects and levels  
 - 🏠 **Homeschooling Support:** Full curriculum or specific subjects  
@@ -29,27 +36,83 @@ We serve students across Nairobi and beyond, covering **IGCSE, IB, American K-12
 
 ---
 
-## 📞 Contact Us
+### 📂 Project Structure  
 
-We’d love to hear from you! Reach out today for inquiries, bookings, or partnerships:
+```plaintext
+elimuhub-website.github.io/
+│
+├── index.html          # Homepage
+├── about.html          # About Us page
+├── services.html       # Services page
+├── blog.html           # Blog page
+├── resources.html      # Resources page
+├── contact.html        # Contact page
+│
+└── assets/             # Styles & images
+    ├── style.css
+    ├── Elimuhub-newlogo.png
+    └── (future images, icons, scripts)
 
-- **Email:** elimuhubconsultant@gmail.com  
-- **Phone/WhatsApp:** +254 731 838 387  
-- **Location:** Muhoho Avenue, Nairobi, Kenya  
-
-🌐 **Social Media**  
-- [Facebook](https://facebook.com/elimuhub)  
-- [Twitter](https://twitter.com/elimuhub)  
-- [Instagram](https://instagram.com/elimuhub)  
 
 ---
 
-## 🛠️ Getting Started with This Repo
+🚀 Getting Started
 
-This repository is dedicated to hosting **Elimuhub’s website, content, and related projects**.  
-As a beginner-friendly starting point:
+1. Clone the repo:
 
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/elimuhub-website.github.io.git
-   cd elimuhub
+git clone https://github.com/kibiti/elimuhub-website.github.io.git
+cd elimuhub-website.github.io
+
+
+2. Preview locally:
+Open index.html in your browser.
+
+
+3. Update styles or images:
+
+Add new files to the assets/ folder.
+
+Reference them in your HTML:
+
+<link rel="stylesheet" href="assets/style.css">
+<img src="assets/Elimuhub-newlogo.png" alt="Elimuhub Logo">
+
+
+
+4. Deploy:
+Push changes to GitHub – they will auto-deploy via GitHub Pages.
+
+
+
+
+---
+
+📞 Contact Us
+
+We’d love to hear from you! Reach out today for inquiries, bookings, or partnerships:
+
+Email: elimuhubconsultant@gmail.com
+
+Phone/WhatsApp: +254 731 838 387
+
+Location: Muhoho Avenue, Nairobi, Kenya
+
+
+🌐 Social Media
+
+Facebook
+
+Twitter
+
+Instagram
+
+
+
+---
+
+📌 License
+
+© 2025 Elimuhub Education Consultants – All Rights Reserved.
+This project is for educational and organizational website purposes only.
+
+---
