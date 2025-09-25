@@ -2,10 +2,21 @@
 # 📚 Elimuhub Education Consultants
 
 <p align="center">
-  <img src="assets/Elimuhub-newlogo.png" alt="Elimuhub Logo" width="200">
+  <a href="https://elimuhub-website.github.io/">
+    <img src="https://raw.githubusercontent.com/kibiti/elimuhub-website.github.io/a741b8f8c87e4b3c0447a75cd38ba18264d005d2/Assets/Elimuhub-newlogo.png"
+         alt="Elimuhub Logo"
+         width="200"
+         title="Elimuhub Education Consultants Logo"/>
+  </a>
   <br>
   <em>Your Pathway to Academic Excellence</em>
 </p>
+
+---
+
+Welcome to **Elimuhub Education Consultants** – your trusted partner in navigating academic journeys, unlocking opportunities, and achieving educational goals.  
+Whether you're a student, parent, or institution, Elimuhub provides expert guidance and resources for every step of the way.
+
 
 <div align="center">
 
