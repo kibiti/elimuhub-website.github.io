@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Elimuhub Education Consultants</title>
-  <meta name="description" content="Get in touch with Elimuhub Education Consultants in Nairobi. Call, email, or send us a message through our contact form.">
+  <meta name="description" content="Get in touch with Elimuhub Education Consultants. Contact us for private tutoring, homeschooling, and after-school programs across Nairobi.">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" href="assets/logo.png">
 </head>
@@ -26,49 +26,45 @@
     <section>
       <h2>We’d Love to Hear From You</h2>
       <p>
-        Whether you’re interested in private tutoring, homeschooling, or after-school programs, 
-        we’re here to help. Reach out through the form below, or use our direct contacts.
+        Whether you have a question about our tutoring services, homeschooling, or want to book a free educational assessment,
+        we’re here to help. Reach out through the form below or our direct contacts.
       </p>
+
+      <!-- ===== Contact Form ===== -->
+      <form action="thank-you.html" method="GET" class="contact-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254...">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </section>
 
-    <!-- Contact Details -->
+    <!-- ===== Contact Details ===== -->
     <section>
       <h2>Our Contact Details</h2>
       <p>📍 Muhoho Avenue, Nairobi, Kenya</p>
       <p>📧 <a href="mailto:elimuhubconsultant@gmail.com">elimuhubconsultant@gmail.com</a></p>
       <p>☎️ <a href="tel:+254731838387">+254 731 838 387</a></p>
       <p>
-        🌐 <a href="https://facebook.com/elimuhub" target="_blank">Facebook</a> | 
-        <a href="https://twitter.com/elimuhub" target="_blank">Twitter</a> | 
+        🌐 Follow us: 
+        <a href="https://facebook.com/elimuhub" target="_blank">Facebook</a> |
+        <a href="https://twitter.com/elimuhub" target="_blank">Twitter</a> |
         <a href="https://instagram.com/elimuhub" target="_blank">Instagram</a>
       </p>
-    </section>
-
-    <!-- Contact Form -->
-    <section>
-      <h2>Send Us a Message</h2>
-      <form class="contact-form" action="#" method="post">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
     </section>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer>
-    <address>
-      📍 Muhoho Avenue, Nairobi, Kenya <br>
-      📧 <a href="mailto:elimuhubconsultant@gmail.com">elimuhubconsultant@gmail.com</a> |
-      ☎️ <a href="tel:+254731838387">+254 731 838 387</a>
-    </address>
     <p>&copy; 2025 Elimuhub Education Consultants. All Rights Reserved.</p>
   </footer>
 </body>
