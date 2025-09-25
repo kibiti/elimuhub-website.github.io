@@ -1,70 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Elimuhub Education Consultants</title>
-  <meta name="description" content="Get in touch with Elimuhub Education Consultants. Contact us for private tutoring, homeschooling, and after-school programs across Nairobi.">
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" href="assets/logo.png">
+  <meta name="description" content="Reach out to Elimuhub Education Consultants for personalized tutoring, homeschooling, and academic support in Nairobi. Book your free educational assessment today!" />
+  <meta name="keywords" content="contact Elimuhub, tutoring Nairobi, homeschooling Kenya, education consultants, IGCSE tutors, IB tutors, KCSE tutors, CBC support" />
+
+  <!-- Open Graph (Social Media SEO) -->
+  <meta property="og:title" content="Contact Us - Elimuhub Education Consultants" />
+  <meta property="og:description" content="Contact Elimuhub for expert tutoring, homeschooling, and exam preparation services in Nairobi. Flexible, affordable, and tailored for all learners." />
+  <meta property="og:image" content="assets/Elimuhub-newlogo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://elimuhub-website.github.io/contact.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Elimuhub Education Consultants" />
+  <meta name="twitter:description" content="Get in touch for private tutoring, homeschooling, and after-school programs across Nairobi." />
+  <meta name="twitter:image" content="assets/Elimuhub-newlogo.png" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/Elimuhub-newlogo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f7fafc;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: #fff;
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+    .site-logo {
+      width: 110px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    nav {
+      margin: 1.3rem 0 0 0;
+    }
+    nav a {
+      color: #189ab4;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      font-size: 1.05rem;
+      transition: color .2s;
+    }
+    nav a.active, nav a:hover {
+      color: #05445e;
+      font-weight: 600;
+    }
+    .hero {
+      background: linear-gradient(120deg, #189ab4 0%, #05445e 100%);
+      color: #fff;
+      padding: 2.2rem 1rem 2.2rem 1rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.08rem;
+      margin-bottom: 1.7rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    main {
+      max-width: 1200px;
+      margin: -2rem auto 0 auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px rgba(24, 154, 180, 0.06);
+      padding: 2.5rem 1.3rem 2rem 1.3rem;
+      position: relative;
+      z-index: 3;
+    }
+    .highlight {
+      background: #189ab4;
+      color: #fff;
+      padding: 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(24,154,180, .15);
+      font-size: 1.13rem;
+      margin-bottom: 1.7rem;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 2.8rem;
+    }
+    h2 {
+      color: #05445e;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto 1.5rem auto;
+      background: #e7f6f2;
+      padding: 1.5rem 1rem;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(24,154,180,.09);
+    }
+    .contact-form label {
+      font-weight: 600;
+      color: #05445e;
+      margin-bottom: .2rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 1.03rem;
+      padding: .6rem .7rem;
+      border: 1px solid #babfc4;
+      border-radius: 8px;
+      background: #fff;
+      resize: vertical;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .contact-form button {
+      background: #189ab4;
+      color: #fff;
+      font-size: 1.12rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      padding: .7rem 1.7rem;
+      margin-top: .3rem;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+    .contact-form button:hover {
+      background: #05445e;
+      color: #fff;
+    }
+    .contact-details {
+      background: #f1f1f1;
+      border-radius: 12px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 8px rgba(24,154,180,.08);
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+    }
+    .contact-details h2 {
+      margin-top: 0;
+    }
+    .contact-details a {
+      color: #189ab4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-details a:hover {
+      color: #05445e;
+      text-decoration: underline;
+    }
+    .cta-section {
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: .65rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1.08rem;
+      font-weight: 600;
+      margin: .3rem .4rem;
+      cursor: pointer;
+      text-decoration: none;
+      background: #fff;
+      color: #05445e;
+      border: 2px solid #189ab4;
+      transition: background .2s, color .2s, border .2s;
+    }
+    .btn:hover {
+      background: #189ab4;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    footer {
+      background: #05445e;
+      color: #fff;
+      padding: 2.2rem 1rem 1.2rem 1rem;
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 1.06rem;
+      border-top-left-radius: 22px;
+      border-top-right-radius: 22px;
+    }
+    footer a {
+      color: #189ab4;
+      text-decoration: none;
+      margin: 0 .3rem;
+      font-weight: 500;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 1.2rem .5rem;
+      }
+      .hero h2 {
+        font-size: 1.32rem;
+      }
+      h2 {
+        font-size: 1.19rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- ===== Header ===== -->
   <header>
-    <img src="https://i.postimg.cc/yN7rMrx5/Elimuhub-newlogo.png" alt="Elimuhub Logo" class="site-logo" />
-     <h1>Contact Us</h1>
+    <img src="assets/Elimuhub-newlogo.png" alt="Elimuhub Logo" class="site-logo" />
+    <h1>Contact Us</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="resources.html">Resources</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <h2>We’d Love to Hear from You</h2>
+    <p>
+      Have a question about our tutoring, homeschooling, or want to book a free assessment? Our team is ready to support you every step of your learning journey!
+    </p>
+    <a href="services.html" class="btn">Explore Our Services</a>
+  </section>
+
   <!-- ===== Main Content ===== -->
   <main>
+    <div class="highlight">
+      <strong>Contact us today for a free academic consultation or to book a personalized learning plan!</strong>
+    </div>
     <section>
-      <h2>We’d Love to Hear From You</h2>
-      <p>
-        Whether you have a question about our tutoring services, homeschooling, or want to book a free educational assessment,
-        we’re here to help. Reach out through the form below or our direct contacts.
-      </p>
-
-      <!-- ===== Contact Form ===== -->
-      <form action="thank-you.html" method="GET" class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="thank-you.html" method="GET" class="contact-form" aria-label="Contact form">
         <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Your name">
+        <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name" />
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com">
+        <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email" />
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+254...">
+        <input type="tel" id="phone" name="phone" placeholder="+254..." autocomplete="tel" />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..." autocomplete="off"></textarea>
 
         <button type="submit" class="btn">Send Message</button>
       </form>
     </section>
 
-    <!-- ===== Contact Details ===== -->
-    <section>
+    <section class="contact-details">
       <h2>Our Contact Details</h2>
       <p>📍 Muhoho Avenue, Nairobi, Kenya</p>
       <p>📧 <a href="mailto:elimuhubconsultant@gmail.com">elimuhubconsultant@gmail.com</a></p>
       <p>☎️ <a href="tel:+254731838387">+254 731 838 387</a></p>
       <p>
-        🌐 Follow us: 
-        <a href="https://facebook.com/elimuhub" target="_blank">Facebook</a> |
-        <a href="https://twitter.com/elimuhub" target="_blank">Twitter</a> |
-        <a href="https://instagram.com/elimuhub" target="_blank">Instagram</a>
+        🌐 Follow us:
+        <a href="https://facebook.com/elimuhub" target="_blank" rel="noopener">Facebook</a> |
+        <a href="https://twitter.com/elimuhub" target="_blank" rel="noopener">Twitter</a> |
+        <a href="https://instagram.com/elimuhub" target="_blank" rel="noopener">Instagram</a>
       </p>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready to Transform Your Learning?</h2>
+      <a href="services.html" class="btn">View All Services</a>
+      <a href="contact.html" class="btn">Book Free Assessment</a>
+      <p>Or call <a href="tel:+254731838387">+254 731 838 387</a> for instant consultation.</p>
     </section>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer>
+    <address>
+      📍 Muhoho Avenue, Nairobi, Kenya <br />
+      📧 <a href="mailto:elimuhubconsultant@gmail.com">elimuhubconsultant@gmail.com</a> |
+      ☎️ <a href="tel:+254731838387">+254 731 838 387</a>
+    </address>
+    <p>
+      <a href="https://facebook.com/elimuhub" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/elimuhub" target="_blank">Twitter</a> |
+      <a href="https://instagram.com/elimuhub" target="_blank">Instagram</a>
+    </p>
     <p>&copy; 2025 Elimuhub Education Consultants. All Rights Reserved.</p>
   </footer>
 </body>
