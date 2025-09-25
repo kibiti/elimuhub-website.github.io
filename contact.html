@@ -4,46 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Elimuhub Education Consultants</title>
-  <meta name="description" content="Contact Elimuhub Education Consultants for personalized tutoring, homeschooling, and educational support in Nairobi, Kenya.">
+  <meta name="description" content="Get in touch with Elimuhub Education Consultants in Nairobi. Call, email, or send us a message through our contact form.">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" href="assets/logo.png">
 </head>
 <body>
+  <!-- ===== Header ===== -->
   <header>
     <img src="assets/logo.png" alt="Elimuhub Logo" class="site-logo" />
-    <h1>Contact Elimuhub</h1>
+    <h1>Contact Us</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
+  <!-- ===== Main Content ===== -->
   <main>
     <section>
-      <h2>Get in Touch</h2>
+      <h2>We’d Love to Hear From You</h2>
+      <p>
+        Whether you’re interested in private tutoring, homeschooling, or after-school programs, 
+        we’re here to help. Reach out through the form below, or use our direct contacts.
+      </p>
+    </section>
+
+    <!-- Contact Details -->
+    <section>
+      <h2>Our Contact Details</h2>
       <p>📍 Muhoho Avenue, Nairobi, Kenya</p>
       <p>📧 <a href="mailto:elimuhubconsultant@gmail.com">elimuhubconsultant@gmail.com</a></p>
       <p>☎️ <a href="tel:+254731838387">+254 731 838 387</a></p>
       <p>
-        <a href="https://facebook.com/elimuhub" target="_blank">Facebook</a> |
-        <a href="https://twitter.com/elimuhub" target="_blank">Twitter</a> |
+        🌐 <a href="https://facebook.com/elimuhub" target="_blank">Facebook</a> | 
+        <a href="https://twitter.com/elimuhub" target="_blank">Twitter</a> | 
         <a href="https://instagram.com/elimuhub" target="_blank">Instagram</a>
       </p>
-      <form class="contact-form" action="mailto:elimuhubconsultant@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send</button>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+      <h2>Send Us a Message</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
+  <!-- ===== Footer ===== -->
   <footer>
+    <address>
+      📍 Muhoho Avenue, Nairobi, Kenya <br>
+      📧 <a href="mailto:elimuhubconsultant@gmail.com">elimuhubconsultant@gmail.com</a> |
+      ☎️ <a href="tel:+254731838387">+254 731 838 387</a>
+    </address>
     <p>&copy; 2025 Elimuhub Education Consultants. All Rights Reserved.</p>
   </footer>
 </body>
