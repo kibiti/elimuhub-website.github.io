@@ -1,0 +1,305 @@
+/* ===== Base Styles ===== */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7fafc;
+  color: #222;
+  line-height: 1.7;
+}
+
+header {
+  background: #fff;
+  color: #05445e;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+.site-logo {
+  width: 110px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin: 1.3rem 0 0 0;
+}
+
+nav a {
+  color: #189ab4;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color .2s;
+}
+
+nav a.active, nav a:hover, nav a[aria-current="page"] {
+  color: #05445e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(120deg, #189ab4 0%, #05445e 100%);
+  color: #fff;
+  padding: 2.2rem 1rem 2.2rem 1rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.08rem;
+  margin-bottom: 1.7rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Main & Layout ===== */
+main {
+  max-width: 1200px;
+  margin: -2rem auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(24, 154, 180, 0.06);
+  padding: 2.5rem 1.3rem 2rem 1.3rem;
+  position: relative;
+  z-index: 3;
+}
+
+section {
+  margin-bottom: 2.8rem;
+}
+
+h1 {
+  color: #05445e;
+  font-size: 2rem;
+  margin-bottom: 0.7em;
+  font-weight: 700;
+}
+
+h2 {
+  color: #05445e;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #189ab4;
+  font-size: 1.2rem;
+  margin-bottom: .6rem;
+  font-weight: bold;
+}
+
+/* ===== Highlight and Cards ===== */
+.highlight {
+  background: #189ab4;
+  color: #fff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(24,154,180, .15);
+  font-size: 1.13rem;
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+
+.card, .resource-card, .blog-card, .team-card, .core-values, .contact-details {
+  background: #e7f6f2;
+  border-radius: 12px;
+  padding: 1.3rem 1rem;
+  box-shadow: 0 2px 8px rgba(24,154,180, .08);
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+/* ===== Grids ===== */
+.grid-3, .resource-grid, .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  margin-top: 1.2rem;
+}
+
+/* ===== Lists ===== */
+ul {
+  margin-left: 1.1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.2em;
+}
+
+ul li {
+  margin-bottom: .7rem;
+  font-size: 1.07rem;
+}
+
+/* ===== Buttons ===== */
+.btn, .btn-outline {
+  display: inline-block;
+  padding: .65rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: .3rem .4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s, color .2s, border .2s;
+  border: 2px solid #189ab4;
+}
+
+.btn {
+  background: #fff;
+  color: #05445e;
+}
+
+.btn:hover {
+  background: #189ab4;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #189ab4;
+}
+
+.btn-outline:hover {
+  background: #189ab4;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+  background: #eef4fb;
+  padding: 1em;
+  border-radius: 8px;
+  margin-top: 1.2em;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,64,128,0.08);
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #05445e;
+  margin-bottom: .2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1.03rem;
+  padding: .6em .7em;
+  border: 1px solid #babfc4;
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background: #189ab4;
+  color: #fff;
+  font-size: 1.12rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: .7rem 1.7rem;
+  margin-top: .3rem;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+
+.contact-form button:hover {
+  background: #05445e;
+  color: #fff;
+}
+
+/* ===== Address, Links, Accessibility ===== */
+address {
+  font-style: normal;
+  margin-bottom: 1em;
+}
+
+address a,
+footer a {
+  color: #189ab4;
+  text-decoration: none;
+  margin: 0 .3rem;
+  font-weight: 500;
+}
+
+address a:hover,
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #05445e;
+  color: #fff;
+  padding: 2.2rem 1rem 1.2rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.06rem;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 700px) {
+  main {
+    padding: 1.2rem .5rem;
+  }
+  .site-logo {
+    width: 60px;
+    height: auto;
+  }
+  .hero h2 {
+    font-size: 1.32rem;
+  }
+  h1, h2 {
+    font-size: 1.19rem;
+  }
+  .grid-3, .resource-grid, .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: .8rem .2rem;
+  }
+  .site-logo {
+    width: 44px;
+    height: auto;
+  }
+  .hero {
+    padding: 1.2rem .2rem 1.2rem .2rem;
+  }
+  }
